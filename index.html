@@ -1,0 +1,18 @@
+<?php
+$url = "";
+if(isset($_POST['submit'])) {
+	$url = $_POST['url'];
+	header('Location: /parse.php/'.$url);
+}
+?>
+
+<!DOCTYPE html>
+	<head>
+	</head>
+	<body>
+		<form method="post" style="text-align:center;position:relative;top:25vh;">
+			<input type="text" name="url" style="width:25%"/>
+			<input type="submit" name="submit" value="Go"/>
+		</form>
+	</body>
+</html>
